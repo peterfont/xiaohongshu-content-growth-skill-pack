@@ -1,0 +1,23 @@
+{
+  "version": "16.0.0",
+  "files": [
+    "CHANGELOG.md",
+    "README.md",
+    "USAGE.md",
+    "data/README.md",
+    "docs/behavior-model.md",
+    "docs/content-model.md",
+    "docs/experiment-loop.md",
+    "docs/research-model.md",
+    "examples/prediction-card.md",
+    "examples/research-pack.md",
+    "examples/review-card.md",
+    "skills/behavior-predictor/SKILL.md",
+    "skills/content-generator/SKILL.md",
+    "skills/orchestrator/SKILL.md",
+    "skills/performance-analyst/SKILL.md",
+    "skills/research-agent/SKILL.md",
+    "skills/strategy-learner/SKILL.md",
+    "skills/topic-planner/SKILL.md"
+  ]
+}
