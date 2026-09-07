@@ -1,9 +1,9 @@
 ---
 name: xiaohongshu-visual-generator
-version: 16.0.0
+version: 17.0.0
 language: zh-CN
 ---
-# 小红书视觉与图文素材生成 v16
+# 小红书视觉与图文素材生成 v17
 
 ## 最高优先级规则
 如果内容规划为 6 页：

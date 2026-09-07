@@ -1,5 +1,5 @@
 {
-  "version": "16.0.0",
+  "version": "18.0.0",
   "files": [
     "CHANGELOG.md",
     "README.md",
@@ -19,5 +19,7 @@
     "skills/research-agent/SKILL.md",
     "skills/strategy-learner/SKILL.md",
     "skills/topic-planner/SKILL.md"
-  ]
+  ],
+  "research_agent": "detailed-search-sop",
+  "notes": "v18 adds ChatGPT Deep Research as an optional execution backend for research-agent; v17 rules preserved."
 }

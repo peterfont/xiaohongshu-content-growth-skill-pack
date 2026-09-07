@@ -1,9 +1,9 @@
 ---
 name: xiaohongshu-performance-analyst
-version: 16.0.0
+version: 17.0.0
 language: zh-CN
 ---
-# 发布后数据诊断 v16
+# 发布后数据诊断 v17
 
 ## 目标
 内容生产负责生产；数据复盘负责学习。二者分开。

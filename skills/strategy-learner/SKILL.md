@@ -1,9 +1,9 @@
 ---
 name: xiaohongshu-strategy-learner
-version: 16.0.0
+version: 17.0.0
 language: zh-CN
 ---
-# 策略学习与规则沉淀 v16
+# 策略学习与规则沉淀 v17
 
 ## 使命
 发布 → 数据 → 比较预测与实际 → 找重复模式 → 区分随机与稳定 → 更新规则 → 下一轮使用。

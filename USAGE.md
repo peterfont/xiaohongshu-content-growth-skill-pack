@@ -1,4 +1,4 @@
-# v16 使用说明
+# v17 使用说明
 
 ## 一、你日常只需要记住两种模式
 
@@ -11,7 +11,7 @@
 
 提示词：
 
-> 按小红书内容实验 Skill Pack v16 执行。素材是：XXX。走快速模式。先给发布前实验卡，再生成可直接发布正文。
+> 按小红书内容实验 Skill Pack v17 执行。素材是：XXX。走快速模式。先给发布前实验卡，再生成可直接发布正文。
 
 ### 模式 B：搜索研究型
 适合知识、行业、产品、用户痛点、评论舆情类内容。
@@ -22,7 +22,7 @@
 
 提示词：
 
-> 按 v16 搜索研究型流程执行。选题是：XXX。先不要写文章；先产出搜索词、素材池、重复观点、用户原话、正反观点、案例和证据缺口。素材包完成后再进入标题与正文。
+> 按 v17 搜索研究型流程执行。选题是：XXX。先不要写文章；先产出搜索词、素材池、重复观点、用户原话、正反观点、案例和证据缺口。素材包完成后再进入标题与正文。
 
 ## 二、每篇内容的标准输入
 
@@ -78,19 +78,19 @@
 
 ```text
 project/
-└── .skills/xhs-content-experiment-v16/
+└── .skills/xhs-content-experiment-v17/
 ```
 
 然后在项目规则或首次提示词中指定：
 
-> 小红书任务先读取 `.skills/xhs-content-experiment-v16/skills/orchestrator/SKILL.md`，并按其中路由按需读取其他 Skill。
+> 小红书任务先读取 `.skills/xhs-content-experiment-v17/skills/orchestrator/SKILL.md`，并按其中路由按需读取其他 Skill。
 
 无需每次把所有文件都塞进上下文；总控只在需要时读取对应模块。
 
 ### 普通 ChatGPT 对话
 上传 ZIP 或解压后的关键文件。最省事的是上传 ZIP 后说：
 
-> 以后这轮对话的小红书任务，以这个 v16 Skill Pack 为准。先读 orchestrator，再按任务读取对应 Skill。
+> 以后这轮对话的小红书任务，以这个 v17 Skill Pack 为准。先读 orchestrator，再按任务读取对应 Skill。
 
 ## 六、最重要的使用纪律
 
@@ -101,3 +101,14 @@ project/
 - 不用单篇数据宣布普遍规律。
 - 同母题可以连续做，但内容功能要变化：观点 / 案例 / 搜索舆情 / 方法 / 数据 / 经历。
 - 未验证规则不批量自动化。
+
+
+## 使用 ChatGPT Deep Research
+当需要深度研究时，可以直接说：
+
+- `按最新 Skill，用 Deep Research 先研究这个题，不写正文。`
+- `按最新 Skill，把这个题做成 Research Pack，再继续生成内容。`
+- `按最新 Skill，先查社区讨论、行业数据、反例和用户原话。`
+
+总控会先生成 Research Brief，再选择 Deep Research（若当前运行环境支持）或普通 Web 多轮研究。
+不得把“没有实际调用 Deep Research”表述为“已经用 Deep Research 查过”。

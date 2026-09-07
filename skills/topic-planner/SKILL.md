@@ -1,9 +1,9 @@
 ---
 name: xiaohongshu-topic-planner
-version: 16.0.0
+version: 17.0.0
 language: zh-CN
 ---
-# 小红书选题策划 v16
+# 小红书选题策划 v17
 
 ## 1. 选题、标题、正文严格分离
 - 选题：内部研究问题，可以抽象。

@@ -1,9 +1,9 @@
 ---
 name: xiaohongshu-content-experiment-orchestrator
-version: 16.0.0
+version: 18.0.0
 language: zh-CN
 ---
-# 小红书内容实验总控 v16
+# 小红书内容实验总控 v18
 
 ## 使命
 把内容运营变成：研究、实验、反馈、学习，而不是一次性文案生成。
@@ -18,6 +18,41 @@ language: zh-CN
 4. 再调用 `content-generator`。
 5. 用户需要封面/多页图文时调用 `visual-generator`。
 6. 发布后只进入 `performance-analyst` + `strategy-learner`，不要把复盘混进生产流程。
+
+## Research 深度模式
+当路由到 research-agent 时，不允许只做“搜几条资料 + 总结”。默认要求执行：
+搜索词矩阵 → 多来源收集 → 原始素材池 → 分类 → 3–7个主题簇 → 用户语言库 → 正反观点/反例 → 案例/数据 → 证据缺口 → 最值得使用素材。
+
+产品类必须额外检查详情页、竞品、好评、差评、问大家/Q&A、评论，并完成“参数→功能→场景→结果→痛点”的转换。
+
+评论区研究按“轻量访谈”处理，提取需求、场景、语言、异议、办法、经历和行动阻力。
+
+Research 完成后才进入 Behavior Predictor 与 Content Generator。
+
+
+
+## Deep Research 路由（v18）
+当进入 Research 模式后，再按复杂度选择执行器：
+- L0 无需外部研究：已有充分一手素材；
+- L1 普通 Web：少量来源即可回答；
+- L2 完整 Research：需要素材池、社区观点、用户语言、反例；
+- L3 ChatGPT Deep Research：跨来源、近期、争议、证据链复杂或需要多轮补缺口。
+
+若运行环境支持 ChatGPT Deep Research：
+1. 先让 `research-agent` 生成 Research Brief；
+2. 把 Research Brief 交给 Deep Research；
+3. Deep Research 只负责检索、阅读、核验、归纳；
+4. 返回后由 `research-agent` 二次验收；
+5. 验收通过后，才进入 `behavior-predictor` 与 `content-generator`。
+
+若环境不支持 Deep Research：
+- 不得声称已经调用；
+- 使用当前可用 Web/搜索工具执行同一 Research Brief；
+- 在 Research Pack 标记实际执行方式。
+
+原则：
+> Deep Research 是 research-agent 的研究执行器，不是独立平行 Skill。
+
 
 ## 快速模式与研究模式
 - 快速模式：真实经历/已验证母题/已有充分素材。

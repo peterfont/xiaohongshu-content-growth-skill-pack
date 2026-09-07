@@ -1,10 +1,10 @@
-# 小红书内容实验 Skill Pack v16
+# 小红书内容实验 Skill Pack v18
 
 > 定位：一套“研究 → 生产 → 发布 → 数据 → 学习”的小红书内容实验系统。
 
-v16 不是把所有规则塞进一个大 Prompt，而是恢复多 Skill 结构，并保留 v9–v15 的全部历史修正。
+v18 不是把所有规则塞进一个大 Prompt，而是恢复多 Skill 结构，并保留 v9–v15 的全部历史修正。
 
-## v16 的核心变化
+## v18 的核心变化
 
 1. 恢复多文件、多 Skill 项目结构。
 2. 新增 `research-agent`：把“搜索式内容生产”独立成研究环节。
@@ -59,7 +59,7 @@ Strategy Learner（规则、反例、置信度）
 
 对 Agent 说：
 
-> 读取本项目 `skills/orchestrator/SKILL.md`，按 v16 流程工作。我的素材/选题是：XXX。先不要直接写正文，先判断是否需要 Research Agent。
+> 读取本项目 `skills/orchestrator/SKILL.md`，按 v18 流程工作。我的素材/选题是：XXX。先不要直接写正文，先判断是否需要 Research Agent。
 
 发布后，把数据交给它：
 
@@ -70,3 +70,16 @@ Strategy Learner（规则、反例、置信度）
 ## 单一事实源
 
 当前只维护模块化多文件版本。旧长文件不是运行依赖；其有效规则已迁移到对应模块。迁移核对见 `docs/rule-migration-audit.md`。
+
+
+## v18 搜索研究升级
+Research Agent 现在执行完整“选题→搜索→收集→整理→删减→素材包”流程，包含搜索词矩阵、多来源分工、评论轻量访谈、产品详情/竞品/评价研究、主题聚类、用户语言库、正反观点、证据缺口和研究质量门禁。
+
+
+## v18 关键升级
+- Research Agent 可把 ChatGPT Deep Research 作为外部研究执行器；
+- 新增 Research Brief → Deep Research → Research Pack → 二次验收流程；
+- 新增 L0–L3 研究深度路由；
+- 明确 Deep Research 不能直接越权写最终内容；
+- 明确不支持 Deep Research 时必须降级到普通 Web，并标记实际执行方式；
+- 强化“搜索可以修正观点，而不是只为观点找证据”。

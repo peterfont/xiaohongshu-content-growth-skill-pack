@@ -1,9 +1,9 @@
 ---
 name: xiaohongshu-behavior-predictor
-version: 16.0.0
+version: 17.0.0
 language: zh-CN
 ---
-# 小红书用户行为预测 v16
+# 小红书用户行为预测 v17
 
 ## 预测对象
 不预测“文章有多好”，预测“用户为什么行动”。分别解释：为什么点击、为什么停留、为什么收藏、为什么评论、为什么关注。

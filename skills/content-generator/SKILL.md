@@ -1,9 +1,9 @@
 ---
 name: xiaohongshu-content-generator
-version: 16.0.0
+version: 17.0.0
 language: zh-CN
 ---
-# 行为驱动内容生成 v16
+# 行为驱动内容生成 v17
 
 ## 标题
 - 最终标题 ≤20 字，默认 12–18 字。
